@@ -39,3 +39,6 @@
 - Add `data`
   - downloaded from repo
 
+# Step 2: Setup App.js
+
+- Add Imports
