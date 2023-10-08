@@ -98,3 +98,5 @@ export default App
 ### Create Components & Page Files
 
 - Add all of the .jsx files
+- Create boilerplate code in every file
+  - Shortcut: `rafce`
