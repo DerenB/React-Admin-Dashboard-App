@@ -1,6 +1,28 @@
 # React-Admin-Dashboard-App
 
-# Step 1: Initialize Project
+# Step 0: SyncFusion Components
+
+### Settings Button
+
+```
+<div className='fixed right-4 bottom-4' style={{ zIndex: '1000'}}>
+  <TooltipComponent content="Settings" position='Top'>
+    <button type='button' className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white' style={{ background: 'blue', borderRadius: '50%'}}>
+      <FiSettings />
+    </button>
+  </TooltipComponent>
+</div>
+```
+- The first Div
+  - Classes
+    - fixed : fixes the location on the screen
+    - right-4 : 4 units from the right
+    - bottom-4 : 4 units from the bottom
+  - Styles
+    - zIndex : prioritizes the div so that it is above all other items
+
+
+# Step 1: Setup Project
 
 - Step 1: Create React App in frontend directory
   - `npx create-react-app frontend`
@@ -39,6 +61,36 @@
 - Add `data`
   - downloaded from repo
 
-# Step 2: Setup App.js
+### Setup index.js
 
 - Add Imports
+- Add root render object
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import './index.css';
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+### Setup App.js
+
+- Add Imports
+```
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { FiSettings } from 'react-icons/fi';
+import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+
+import './App.css';
+
+const App = () => {
+  return (
+    <h1>App</h1>
+  )
+}
+
+export default App
+```
