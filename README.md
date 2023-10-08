@@ -100,3 +100,6 @@ export default App
 - Add all of the .jsx files
 - Create boilerplate code in every file
   - Shortcut: `rafce`
+
+# Step 2: Sidebar Component
+
